@@ -11,7 +11,11 @@
       margin: 50px;
     }
 
-    div {
+    input {
+      width: 80px;
+    }
+
+    .div {
       margin-top: 100px;
     }
   </style>
@@ -23,57 +27,65 @@
     <h1>Мiнус 15%</h1>
 
     <!-- First set of input fields for subtraction -->
+    <div>
     <label for="num1">Ведiть перше число:</label>
     <input type="number" id="num1" placeholder="Ведiть число">
-
+    </div>
+    <div>
     <label for="num2">Ведiть друге число:</label>
     <input type="number" id="num2" placeholder="Ведiть число">
-
+    </div>
     <button onclick="multiplyAndSubtract('result1', 'num1', 'num2')">Помножити та вiдняти 15%</button>
 
     <h2>Результат:</h2>
     <p id="result1"></p>
   </div>
 
-  <div>
+  <div class="div">
     <h1>Плюс 5%</h1>
     <!-- Second set of input fields for addition -->
+    <div>
     <label for="num3">Ведiть перше число:</label>
     <input type="number" id="num3" placeholder="Ведiть число">
-
+</div>
+<div>
     <label for="num4">Ведiть друге число:</label>
     <input type="number" id="num4" placeholder="Ведiть число">
-
+</div>
     <button onclick="multiplyAndAdd('result2', 'num3', 'num4')">Помножити та додати 5%</button>
 
     <h2>Результат:</h2>
     <p id="result2"></p>
   </div>
 
-  <div>
+  <div class="div">
     <h1>Плюс 10%</h1>
     <!-- Third set of input fields for addition with 10% -->
+    <div>
     <label for="num5">Ведiть перше число:</label>
     <input type="number" id="num5" placeholder="Ведiть число">
-
+</div>
+<div>
     <label for="num6">Ведiть друге число:</label>
     <input type="number" id="num6" placeholder="Ведiть число">
-
+</div>
     <button onclick="multiplyAndAdd10('result3', 'num5', 'num6')">Помножити та додати 10%</button>
 
     <h2>Результат:</h2>
     <p id="result3"></p>
   </div>
 
-  <div>
+  <div class="div">
     <h1>Плюс 15%</h1>
     <!-- Fourth set of input fields for addition -->
+    <div>
     <label for="num7">Ведiть перше число:</label>
     <input type="number" id="num7" placeholder="Ведiть число">
-
+</div>
+<div>
     <label for="num8">Ведiть друге число:</label>
     <input type="number" id="num8" placeholder="Ведiть число">
-
+</div>
     <button onclick="multiplyAndAdd15('result4', 'num7', 'num8')">Помножити та додати 15%</button>
 
     <h2>Результат:</h2>
