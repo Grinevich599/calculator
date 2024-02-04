@@ -39,14 +39,29 @@
     .text {
       opacity: 0.5;
     }
+    .clearFields {
+      margin-top: 20px;
+    }
+    .df {
+      display: flex;
+    }
+    .totalResult {
+      margin-left: 5px;
+    }
   </style>
 </head>
 
 <body>
-
+<div>
 <label for=""> Витрата палива на 100/км</label>
 <input class="vitrata" type="number" id="vitrata" placeholder="Введіть витрату">
+</div>
+<div class="df">
+  <p>Сумарно: </p>
+  <p class="totalResult" id="totalResult"></p>
+</div>
 
+<button class="clearFields" onclick="clearFields()">Очистити всі поля</button>
   <div class="div">
     <h3>Мiнус 15%</h3>
 <p class="text">При роботі: 
@@ -146,7 +161,27 @@
   </div>
 
   <script>
-    function multiplyAndSubtract(resultId, input1Id, input2Id) {
+
+
+
+
+
+
+
+
+  function updateTotalResult() {
+  var result1 = parseFloat(document.getElementById('result1').innerText) || 0;
+  var result2 = parseFloat(document.getElementById('result2').innerText) || 0;
+  var result3 = parseFloat(document.getElementById('result3').innerText) || 0;
+  var result4 = parseFloat(document.getElementById('result4').innerText) || 0;
+
+  var totalResult = result1 + result2 + result3 + result4;
+
+  document.getElementById('totalResult').innerText = "" + totalResult;
+}
+
+function multiplyAndSubtract(resultId, input1Id, input2Id) {
+
       var vitrata = parseFloat(document.getElementById(input1Id).value);
       var num2 = parseFloat(document.getElementById(input2Id).value);
 
@@ -163,9 +198,13 @@
         Math.floor(subtractionResult);
 
       document.getElementById(resultId).innerText = "" + roundedResult;
-    }
+    
 
-    function multiplyAndAdd(resultId, input1Id, input2Id) {
+  updateTotalResult();
+}
+
+function multiplyAndAdd(resultId, input1Id, input2Id) {
+
       var vitrata = parseFloat(document.getElementById(input1Id).value);
       var num2 = parseFloat(document.getElementById(input2Id).value);
 
@@ -181,9 +220,13 @@
         Math.floor(additionResult);
 
       document.getElementById(resultId).innerText = "" + roundedResult;
-    }
+    
 
-    function multiplyAndAdd10(resultId, input1Id, input2Id) {
+  updateTotalResult();
+}
+
+function multiplyAndAdd10(resultId, input1Id, input2Id) {
+
       var vitrata = parseFloat(document.getElementById(input1Id).value);
       var num2 = parseFloat(document.getElementById(input2Id).value);
 
@@ -199,9 +242,13 @@
         Math.floor(additionResult);
 
       document.getElementById(resultId).innerText = "" + roundedResult;
-    }
+    
 
-    function multiplyAndAdd15(resultId, input1Id, input2Id) {
+  updateTotalResult();
+}
+
+function multiplyAndAdd15(resultId, input1Id, input2Id) {
+
       var vitrata = parseFloat(document.getElementById(input1Id).value);
       var num2 = parseFloat(document.getElementById(input2Id).value);
 
@@ -217,7 +264,27 @@
         Math.floor(additionResult);
 
       document.getElementById(resultId).innerText = "" + roundedResult;
+
+  updateTotalResult();
+}
+
+
+  function clearFields() {
+      document.getElementById('vitrata').value = '';
+      document.getElementById('num2').value = '';
+      document.getElementById('num4').value = '';
+      document.getElementById('num6').value = '';
+      document.getElementById('num8').value = '';
+      document.getElementById('result1').innerText = '';
+      document.getElementById('result2').innerText = '';
+      document.getElementById('result3').innerText = '';
+      document.getElementById('result4').innerText = '';
+      document.getElementById('totalResult').innerText = '';
     }
+
+  document.getElementById('totalResult').innerText = "";
+
+
   </script>
 
 </body>
