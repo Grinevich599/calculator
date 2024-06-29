@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8">
@@ -16,518 +16,561 @@
     }
 
     .div {
-      margin-top: 50px;
+      margin-top: 10px;
     }
+
     .qwe {
       display: flex;
-      /* height: 20px; */
+      margin-bottom: 10px;
     }
-    .qwer {
-      height: 15px;
-    }
+
     .bebr {
       margin-top: 0;
       margin-left: 5px;
     }
+
     .bebro {
       margin-top: 0;
       margin-left: 5px;
     }
+
     .vitrata {
       width: 100px;
     }
+
     .text {
       opacity: 0.5;
     }
+
     .clearFields {
       margin-top: 20px;
     }
+
     .df {
       display: flex;
     }
+
     .totalResult {
       margin-left: 5px;
     }
+
+    .addField {
+      display: flex;
+      align-items: center;
+      max-width: none;
+      max-height: none;
+      margin: 0px, 0px;
+    }
+
+    .addField input {
+      margin-right: 10px;
+    }
+
+    .addField_text {
+      margin-right: 10px;
+    }
+
+    .addPercentage_text {
+      margin-left: 128px;
+      margin-top: 8px;
+    }
+
+    .header_text {
+      margin: 0;
+    }
+
+    .additionalResult_text {
+      margin-left: 5px;
+    }
+
+
+
+
+
+
+
+/* 15 % */
+
+    body {
+  font-family: roboto, sans-serif;
+  font-size: 15px;
+}
+
+.info {
+  background-color: #ffffff;
+  padding: 10px 25px;
+}
+
+.info__switch {
+  display: none;
+}
+
+.info__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.info__switch:checked~.info__body {
+  max-height: 100px;
+}
+
+.info__headline::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  border: 6px solid #000000;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+.info__switch:checked~.info__headline::before {
+  transform: rotate(180deg) translateY(6px);
+}
+
+.info__headline {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  user-select: none;
+  color: #000000;
+  font-weight: normal;
+  cursor: pointer;
+      font-size: 1.17em;
+}
+
+.info__headline:hover {
+  text-decoration: underline;
+}
+
+/* 5% */
+
+body {
+  font-family: roboto, sans-serif;
+  font-size: 15px;
+}
+
+.details {
+  background-color: #ffffff;
+  padding: 10px 25px;
+}
+
+.details__toggle {
+  display: none;
+}
+
+.details__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.details__toggle:checked~.details__content {
+  max-height: 100px;
+}
+
+.details__title::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  border: 6px solid #000000;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+.details__toggle:checked~.details__title::before {
+  transform: rotate(180deg) translateY(6px);
+}
+
+.details__title {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  user-select: none;
+  color: #000000;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 1.17em;
+}
+
+.details__title:hover {
+  text-decoration: underline;
+}
+
+
+/* 10% */
+body {
+  font-family: roboto, sans-serif;
+  font-size: 15px;
+}
+
+.info {
+  background-color: #ffffff;
+  padding: 10px 25px;
+}
+
+.info__toggle {
+  display: none;
+}
+
+.info__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.info__toggle:checked~.info__body {
+  max-height: 100px;
+}
+
+.info__headline::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  border: 6px solid #000000;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+.info__toggle:checked~.info__headline::before {
+  transform: rotate(180deg) translateY(6px);
+}
+
+.info__headline {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  user-select: none;
+  color: #000000;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 1.17em;
+}
+
+.info__headline:hover {
+  text-decoration: underline;
+}
+
+/* 15% */
+body {
+  font-family: roboto, sans-serif;
+  font-size: 15px;
+}
+
+.accordion {
+  background-color: #ffffff;
+  padding: 10px 25px;
+}
+
+.accordion__checkbox {
+  display: none;
+}
+
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.accordion__checkbox:checked~.accordion__content {
+  max-height: 100px;
+}
+
+.accordion__title::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  border: 6px solid #000000;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.accordion__checkbox:checked~.accordion__title::before {
+  transform: rotate(180deg) translateY(6px);
+}
+
+.accordion__title {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  user-select: none;
+  color: #000000;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 1.17em;
+}
+
+.accordion__title:hover {
+  text-decoration: underline;
+}
+
+
   </style>
 </head>
 
 <body>
-<div>
-<label for=""> Витрата палива на 100/км</label>
-<input class="vitrata" type="number" id="vitrata" placeholder="Введіть витрату">
-</div>
-<div class="df">
-  <p>Сумарно: </p>
-  <p class="totalResult" id="totalResult"></p>
-</div>
+  <div>
+    <label for="vitrata">Витрата палива на 100/км</label>
+    <input class="vitrata" type="number" id="vitrata" placeholder="Введіть витрату">
+  </div>
 
-<button class="clearFields" onclick="clearFields()">Очистити всі поля</button>
+  <div class="header">
+    <div class="df">
+      <p>Сумарно: </p>
+      <p class="totalResult" id="totalResult">0</p>
+    </div>
+    <div class="addField">
+      <label class="addField_text" for="addValue">з Кондиціонером</label>
+      <input type="number" id="addValue" placeholder="Введіть %">
+      <p class="header_text">=</p>
+      <span class="additionalResult_text" id="additionalResult">0</span>
+    </div>
+    <button class="addPercentage_text" onclick="addPercentage()">Розрахунок </button>
+  </div>
+
+  <button class="clearFields" onclick="clearFields()">Очистити всі поля</button>
+
   <div class="div">
-    <h3>Мiнус 15%</h3>
-<p class="text">При роботі: 
-  за межами населених пунктів
-</p>
 
-    <div>
-    <!-- <label for="num1">Ведiть перше число:</label>
-    <input type="number" id="num1" placeholder="Ведiть число"> -->
+
+    <div class="info">
+      <input id="info__body_1" class="info__switch" type="checkbox">
+      <label for="info__body_1" class="info__headline">Мiнус 15%</label>
+      <div class="info__body">
+        При роботі: за межами населених пунктів
+    
+      </div>
+    </div>
+
+
+
+    <!-- <h3>Мiнус 15%</h3>
+    <p class="text">При роботі: за межами населених пунктів</p> -->
+    <div class="qwe">
+      <input class="qwe" type="number" id="num2_1" placeholder="Пробіг">
+      <label for="num2_1">- 15%</label>
+      <p class="bebr">=</p>
+      <p class="bebro" id="result1_1"></p>
+    </div>
+    <button onclick="calculateMinus15()">Розрахунок</button>
+  </div>
+
+  <div class="div">
+  <div class="details">
+    <input id="details__checkbox" class="details__toggle" type="checkbox">
+    <label for="details__checkbox" class="details__title">Плюс 5%</label>
+    <div class="details__content">
+      При роботі: у межах міст, а також у селищах міського типу та інших населених пунктах за наявності в них регульованих перехресть (світлофорів)
+    </div>
+</div>
+
+
+    <!-- <h3>Плюс 5%</h3>
+    <p class="text">При роботі: у межах міст, а також у селищах міського типу та інших населених пунктах за наявності в них регульованих перехресть (світлофорів)</p> -->
+
+
+    <div class="qwe">
+      <input class="qwe" type="number" id="num4_1" placeholder="Пробіг">
+      <label for="num4_1">+5%</label>
+      <p class="bebr">=</p>
+      <p class="bebro" id="result2_1"></p>
     </div>
     <div class="qwe">
-    <!-- <label for="num2">Витрата * </label> -->
-    <input class="qwer" type="number" id="num2" placeholder="Пробіг">
-    <label for="num2">- 15%</label>
-    <p class="bebr">=</p>
-    <p class="bebro" id="result1"></p>
+      <input class="qwe" type="number" id="num4_2" placeholder="Пробіг">
+      <label for="num4_2">+5%</label>
+      <p class="bebr">=</p>
+      <p class="bebro" id="result2_2"></p>
     </div>
-    <button onclick="multiplyAndSubtract('result1', 'vitrata', 'num2')">Розрахунок</button>
-
-    <!-- <h3 id="result1">Результат:</h3> -->
+    <button onclick="calculatePlus5()">Розрахунок</button>
   </div>
-
+</div>
   <div class="div">
-    <h3>Плюс 5%</h3>
-    <p class="text">При роботі:
-      у межах міст, а також у селищах міського типу та інших населених пунктах за наявності в них регульованих перехресть (світлофорів);</p>
 
-    <div>
-    <!-- <label for="num3">Ведiть перше число:</label>
-    <input type="number" id="num3" placeholder="Ведiть число"> -->
-</div>
-<div class="qwe">
-    <!-- <label for="num4">Пробіг</label> -->
-    <input class="qwer" type="number" id="num4" placeholder="Пробіг">
-    <label for="num2">+5%</label>
-    <p class="bebr">=</p>    
-    <p class="bebro" id="result2"></p>
-</div>
-    <button onclick="multiplyAndAdd('result2', 'vitrata', 'num4')">Розрахунок</button>
-
-    <!-- <h2>Результат:</h2> -->
-
-  </div>
-
-  <div class="div">
-    <h3>Плюс 10%</h3>
-    <p class="text">При роботі:
-      у межах міст Алчевськ, Біли Церква, Бровари, Вінниця,
-    Житомир.
-    Івано-Франківськ.
-    Кам'янське,
-    Камʼянець-Подільський,
-    Кропивницький, Краматорськ, Кременчук,
-    Кривий Ріг, Лисичанськ, Луцьк, Маріуполь, Мелітополь, Миколаїв, Нікополь, Пан огра».
-    Полтава, Рівне, Сєверодонецьк. Словʼянськ.
-    Суми, Терпопіль,
-    Ужгород, Херсон,
-    Хмельницький, Черкаси, Чернігів, Чернівці
-    </p>
-    <div>
-    <!-- <label for="num5">Ведiть перше число:</label>
-    <input type="number" id="num5" placeholder="Ведiть число"> -->
-</div>
-<div class="qwe">
+    <div class="info">
+      <input id="info__checkbox" class="info__toggle" type="checkbox">
+      <label for="info__checkbox" class="info__headline">Плюс 10%</label>
+      <div class="info__body">
+        При роботі: у межах міст Алчевськ, Біли Церква, Бровари, Вінниця, Житомир. Івано-Франківськ. Кам'янське, Камʼянець-Подільський, Кропивницький, Краматорськ, Кременчук, Кривий Ріг, Лисичанськ, Луцьк, Маріуполь, Мелітополь, Миколаїв, Нікополь, Пан огра». Полтава, Рівне, Сєверодонецьк. Словʼянськ. Суми, Терпопіль, Ужгород, Херсон, Хмельницький, Черкаси, Чернігів, Чернівці
+      </div>
+    </div>
     
-    <input class="qwer" type="number" id="num6" placeholder="Пробіг">
-    <label for="num6">+10%</label>
-    <p class="bebr">=</p>   
-    <p class="bebro" id="result3"></p>
-</div>
-    <button onclick="multiplyAndAdd10('result3', 'vitrata', 'num6')">Розрахунок</button>
 
-    <!-- <h2>Результат:</h2> -->
 
+    <!-- <h3>Плюс 10%</h3>
+    <p class="text">При роботі: у межах міст Алчевськ, Біла Церква, Бровари, Вінниця, Житомир, Івано-Франківськ, Кам'янське, Камʼянець-Подільський, Кропивницький, Краматорськ, Кременчук, Кривий Ріг, Лисичанськ, Луцьк, Маріуполь, Мелітополь, Миколаїв, Нікополь, Полтава, Рівне, Сєвєродонецьк, Словʼянськ, Суми, Тернопіль, Ужгород, Херсон, Хмельницький, Черкаси, Чернігів, Чернівці</p> -->
+    
+    
+    
+    
+    <div class="qwe">
+      <input class="qwe" type="number" id="num6_1" placeholder="Пробіг">
+      <label for="num6_1">+10%</label>
+      <p class="bebr">=</p>
+      <p class="bebro" id="result3_1"></p>
+    </div>
+    <div class="qwe">
+      <input class="qwe" type="number" id="num6_2" placeholder="Пробіг">
+      <label for="num6_2">+10%</label>
+      <p class="bebr">=</p>
+      <p class="bebro" id="result3_2"></p>
+    </div>
+    <button onclick="calculatePlus10()">Розрахунок</button>
   </div>
 
   <div class="div">
-    <h3>Плюс 15%</h3>
-<p class="text">При роботі:
-  у межах міст Дніпропетровськ, Запоріжжя Київ, Львів, Одеса, Харків
-</p>
-    <div>
-    <!-- <label for="num7">Ведiть перше число:</label>
-    <input type="number" id="num7" placeholder="Ведiть число"> -->
-</div>
-<div class="qwe">
-  <input class="qwer" type="number" id="num8" placeholder="Пробіг">
-  <label for="num8">+15%</label>
-  <p class="bebr">=</p> 
-  <p class="bebro" id="result4"></p>
 
-</div>
-    <button onclick="multiplyAndAdd15('result4', 'vitrata', 'num8')">Розрахунок</button>
+    <div class="accordion">
+      <input id="accordion__checkbox" class="accordion__checkbox" type="checkbox">
+      <label for="accordion__checkbox" class="accordion__title">Плюс 15%</label>
+      <div class="accordion__content">
+        При роботі: у межах міст Дніпропетровськ, Запоріжжя Київ, Львів, Одеса, Харків
+      </div>
+    </div>
+    
 
-    <!-- <h2>Результат:</h2> -->
 
+    <!-- <h3>Плюс 15%</h3>
+    <p class="text">При роботі: у межах міст Дніпро, Запоріжжя, Київ, Львів, Одеса, Харків</p> -->
+    
+    
+    <div class="qwe">
+      <input class="qwe" type="number" id="num8_1" placeholder="Пробіг">
+      <label for="num8_1">+15%</label>
+      <p class="bebr">=</p>
+      <p class="bebro" id="result4_1"></p>
+    </div>
+    <div class="qwe">
+      <input class="qwe" type="number" id="num8_2" placeholder="Пробіг">
+      <label for="num8_2">+15%</label>
+      <p class="bebr">=</p>
+      <p class="bebro" id="result4_2"></p>
+    </div>
+    <button onclick="calculatePlus15()">Розрахунок</button>
   </div>
+
+
 
   <script>
+function updateTotalResult() {
+    var result1_1 = parseFloat(document.getElementById('result1_1').innerText) || 0;
+    var result2_1 = parseFloat(document.getElementById('result2_1').innerText) || 0;
+    var result2_2 = parseFloat(document.getElementById('result2_2').innerText) || 0;
+    var result3_1 = parseFloat(document.getElementById('result3_1').innerText) || 0;
+    var result3_2 = parseFloat(document.getElementById('result3_2').innerText) || 0;
+    var result4_1 = parseFloat(document.getElementById('result4_1').innerText) || 0;
+    var result4_2 = parseFloat(document.getElementById('result4_2').innerText) || 0;
+
+    var totalResult = result1_1 + result2_1 + result2_2 + result3_1 + result3_2 + result4_1 + result4_2;
 
 
+    var formattedTotalResult = totalResult % 1 === 0 ? totalResult.toFixed(0) : totalResult.toFixed(2);
 
-
-
-
-
-
-  function updateTotalResult() {
-  var result1 = parseFloat(document.getElementById('result1').innerText) || 0;
-  var result2 = parseFloat(document.getElementById('result2').innerText) || 0;
-  var result3 = parseFloat(document.getElementById('result3').innerText) || 0;
-  var result4 = parseFloat(document.getElementById('result4').innerText) || 0;
-
-  var totalResult = result1 + result2 + result3 + result4;
-
-  document.getElementById('totalResult').innerText = "" + totalResult;
-}
-
-function multiplyAndSubtract(resultId, input1Id, input2Id) {
-
-      var vitrata = parseFloat(document.getElementById(input1Id).value);
-      var num2 = parseFloat(document.getElementById(input2Id).value);
-
-      if (isNaN(vitrata) || isNaN(num2)) {
-        alert("Будь-ласка, ведiте коректнi числа");
-        return;
-      }
-
-      var multiplicationResult = vitrata * num2 / 100;
-      var subtractionResult = multiplicationResult - (multiplicationResult * 0.15 );
-
-      var roundedResult = Math.abs(subtractionResult % 1) >= 0.5 ?
-        Math.ceil(subtractionResult) :
-        Math.floor(subtractionResult);
-
-      document.getElementById(resultId).innerText = "" + roundedResult;
-    
-
-  updateTotalResult();
-}
-
-function multiplyAndAdd(resultId, input1Id, input2Id) {
-
-      var vitrata = parseFloat(document.getElementById(input1Id).value);
-      var num2 = parseFloat(document.getElementById(input2Id).value);
-
-      if (isNaN(vitrata) || isNaN(num2)) {
-        alert("Будь-ласка, ведiте коректнi числа");
-        return;
-      }
-
-      var multiplicationResult = vitrata * num2 / 100;
-      var additionResult = multiplicationResult + (multiplicationResult * 0.05);
-      var roundedResult = Math.abs(additionResult % 1) >= 0.5 ?
-        Math.ceil(additionResult) :
-        Math.floor(additionResult);
-
-      document.getElementById(resultId).innerText = "" + roundedResult;
-    
-
-  updateTotalResult();
-}
-
-function multiplyAndAdd10(resultId, input1Id, input2Id) {
-
-      var vitrata = parseFloat(document.getElementById(input1Id).value);
-      var num2 = parseFloat(document.getElementById(input2Id).value);
-
-      if (isNaN(vitrata) || isNaN(num2)) {
-        alert("Будь-ласка, ведiте коректнi числа");
-        return;
-      }
-
-      var multiplicationResult = vitrata * num2 / 100;
-      var additionResult = multiplicationResult + (multiplicationResult * 0.10);
-      var roundedResult = Math.abs(additionResult % 1) >= 0.5 ?
-        Math.ceil(additionResult) :
-        Math.floor(additionResult);
-
-      document.getElementById(resultId).innerText = "" + roundedResult;
-    
-
-  updateTotalResult();
-}
-
-function multiplyAndAdd15(resultId, input1Id, input2Id) {
-
-      var vitrata = parseFloat(document.getElementById(input1Id).value);
-      var num2 = parseFloat(document.getElementById(input2Id).value);
-
-      if (isNaN(vitrata) || isNaN(num2)) {
-        alert("Будь-ласка, ведiте коректнi числа");
-        return;
-      }
-
-      var multiplicationResult = vitrata * num2 / 100;
-      var additionResult = multiplicationResult + (multiplicationResult * 0.15);
-      var roundedResult = Math.abs(additionResult % 1) >= 0.5 ?
-        Math.ceil(additionResult) :
-        Math.floor(additionResult);
-
-      document.getElementById(resultId).innerText = "" + roundedResult;
-
-  updateTotalResult();
+    document.getElementById('totalResult').innerText = formattedTotalResult;
 }
 
 
-  function clearFields() {
-      document.getElementById('vitrata').value = '';
-      document.getElementById('num2').value = '';
-      document.getElementById('num4').value = '';
-      document.getElementById('num6').value = '';
-      document.getElementById('num8').value = '';
-      document.getElementById('result1').innerText = '';
-      document.getElementById('result2').innerText = '';
-      document.getElementById('result3').innerText = '';
-      document.getElementById('result4').innerText = '';
-      document.getElementById('totalResult').innerText = '';
+    function calculateMinus15() {
+      multiplyAndSubtract('result1_1', 'vitrata', 'num2_1');
     }
 
-  document.getElementById('totalResult').innerText = "";
+    function calculatePlus5() {
+      multiplyAndAdd('result2_1', 'vitrata', 'num4_1');
+      multiplyAndAdd('result2_2', 'vitrata', 'num4_2');
+    }
+
+    function calculatePlus10() {
+      multiplyAndAdd10('result3_1', 'vitrata', 'num6_1');
+      multiplyAndAdd10('result3_2', 'vitrata', 'num6_2');
+    }
+
+    function calculatePlus15() {
+      multiplyAndAdd15('result4_1', 'vitrata', 'num8_1');
+      multiplyAndAdd15('result4_2', 'vitrata', 'num8_2');
+    }
+
+    function multiplyAndSubtract(resultId, fuelId, distanceId) {
+      var fuel = parseFloat(document.getElementById(fuelId).value);
+      var distance = parseFloat(document.getElementById(distanceId).value);
+
+      if (!isNaN(fuel) && !isNaN(distance)) {
+        var result = (fuel - fuel * 0.15) * distance / 100;
+        document.getElementById(resultId).innerText = Math.round(result);
+        updateTotalResult();
+      }
+    }
+
+    function multiplyAndAdd(resultId, fuelId, distanceId) {
+      var fuel = parseFloat(document.getElementById(fuelId).value);
+      var distance = parseFloat(document.getElementById(distanceId).value);
+
+      if (!isNaN(fuel) && !isNaN(distance)) {
+        var result = (fuel + fuel * 0.05) * distance / 100;
+        document.getElementById(resultId).innerText = Math.round(result);
+        updateTotalResult();
+      }
+    }
+
+    function multiplyAndAdd10(resultId, fuelId, distanceId) {
+      var fuel = parseFloat(document.getElementById(fuelId).value);
+      var distance = parseFloat(document.getElementById(distanceId).value);
+
+      if (!isNaN(fuel) && !isNaN(distance)) {
+        var result = (fuel + fuel * 0.10) * distance / 100;
+        document.getElementById(resultId).innerText = Math.round(result);
+        updateTotalResult();
+      }
+    }
+
+    function multiplyAndAdd15(resultId, fuelId, distanceId) {
+      var fuel = parseFloat(document.getElementById(fuelId).value);
+      var distance = parseFloat(document.getElementById(distanceId).value);
+
+      if (!isNaN(fuel) && !isNaN(distance)) {
+        var result = (fuel + fuel * 0.15) * distance / 100;
+        document.getElementById(resultId).innerText = Math.round(result);
+        updateTotalResult();
+      }
+    }
+
+    function addPercentage() {
+    var totalResult = parseFloat(document.getElementById('totalResult').innerText);
+    var addValue = parseFloat(document.getElementById('addValue').value);
+
+    if (!isNaN(totalResult) && !isNaN(addValue)) {
+        var additionalResult = totalResult + (totalResult * (addValue / 100));
+        var roundedResult = Math.round(additionalResult); 
+
+        document.getElementById('additionalResult').innerText = roundedResult;
+    }
+}
 
 
+    function clearFields() {
+      document.getElementById('vitrata').value = '';
+      document.getElementById('num2_1').value = '';
+      document.getElementById('num4_1').value = '';
+      document.getElementById('num4_2').value = '';
+      document.getElementById('num6_1').value = '';
+      document.getElementById('num6_2').value = '';
+      document.getElementById('num8_1').value = '';
+      document.getElementById('num8_2').value = '';
+      document.getElementById('addValue').value = '';
+
+      document.getElementById('result1_1').innerText = '';
+      document.getElementById('result2_1').innerText = '';
+      document.getElementById('result2_2').innerText = '';
+      document.getElementById('result3_1').innerText = '';
+      document.getElementById('result3_2').innerText = '';
+      document.getElementById('result4_1').innerText = '';
+      document.getElementById('result4_2').innerText = '';
+      document.getElementById('totalResult').innerText = '0';
+    }
   </script>
-
 </body>
 
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Калькулятор</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 50px;
-    }
-
-    input {
-      width: 80px;
-    }
-
-    .div {
-      margin-top: 100px;
-    }
-  </style>
-</head>
-
-<body>
-
-
-
-  <div class="div">
-    <h1>Мiнус 15%</h1>
-
-
-    <div>
-    <label for="num1">Ведiть перше число:</label>
-    <input type="number" id="num1" placeholder="Ведiть число">
-    </div>
-    <div>
-    <label for="num2">Ведiть друге число:</label>
-    <input type="number" id="num2" placeholder="Ведiть число">
-    </div>
-    <button onclick="multiplyAndSubtract('result1', 'num1', 'num2')">Помножити та вiдняти 15%</button>
-
-    <h2>Результат:</h2>
-    <p id="result1"></p>
-  </div>
-
-  <div class="div">
-    <h1>Плюс 5%</h1>
-
-    <div>
-    <label for="num3">Ведiть перше число:</label>
-    <input type="number" id="num3" placeholder="Ведiть число">
-</div>
-<div>
-    <label for="num4">Ведiть друге число:</label>
-    <input type="number" id="num4" placeholder="Ведiть число">
-</div>
-    <button onclick="multiplyAndAdd('result2', 'num3', 'num4')">Помножити та додати 5%</button>
-
-    <h2>Результат:</h2>
-    <p id="result2"></p>
-  </div>
-
-  <div class="div">
-    <h1>Плюс 10%</h1>
-
-    <div>
-    <label for="num5">Ведiть перше число:</label>
-    <input type="number" id="num5" placeholder="Ведiть число">
-</div>
-<div>
-    <label for="num6">Ведiть друге число:</label>
-    <input type="number" id="num6" placeholder="Ведiть число">
-</div>
-    <button onclick="multiplyAndAdd10('result3', 'num5', 'num6')">Помножити та додати 10%</button>
-
-    <h2>Результат:</h2>
-    <p id="result3"></p>
-  </div>
-
-  <div class="div">
-    <h1>Плюс 15%</h1>
-
-    <div>
-    <label for="num7">Ведiть перше число:</label>
-    <input type="number" id="num7" placeholder="Ведiть число">
-</div>
-<div>
-    <label for="num8">Ведiть друге число:</label>
-    <input type="number" id="num8" placeholder="Ведiть число">
-</div>
-    <button onclick="multiplyAndAdd15('result4', 'num7', 'num8')">Помножити та додати 15%</button>
-
-    <h2>Результат:</h2>
-    <p id="result4"></p>
-  </div>
-
-  <script>
-    function multiplyAndSubtract(resultId, input1Id, input2Id) {
-      var num1 = parseFloat(document.getElementById(input1Id).value);
-      var num2 = parseFloat(document.getElementById(input2Id).value);
-
-      if (isNaN(num1) || isNaN(num2)) {
-        alert("Будь-ласка, ведiте коректнi числа");
-        return;
-      }
-
-      var multiplicationResult = num1 * num2 / 100;
-      var subtractionResult = multiplicationResult - (multiplicationResult * 0.15 );
-
-      var roundedResult = Math.abs(subtractionResult % 1) >= 0.5 ?
-        Math.ceil(subtractionResult) :
-        Math.floor(subtractionResult);
-
-      document.getElementById(resultId).innerText = "Результат: " + roundedResult;
-    }
-
-    function multiplyAndAdd(resultId, input1Id, input2Id) {
-      var num1 = parseFloat(document.getElementById(input1Id).value);
-      var num2 = parseFloat(document.getElementById(input2Id).value);
-
-      if (isNaN(num1) || isNaN(num2)) {
-        alert("Будь-ласка, ведiте коректнi числа");
-        return;
-      }
-
-      var multiplicationResult = num1 * num2 / 100;
-      var additionResult = multiplicationResult + (multiplicationResult * 0.05);
-      var roundedResult = Math.abs(additionResult % 1) >= 0.5 ?
-        Math.ceil(additionResult) :
-        Math.floor(additionResult);
-
-      document.getElementById(resultId).innerText = "Результат: " + roundedResult;
-    }
-
-    function multiplyAndAdd10(resultId, input1Id, input2Id) {
-      var num1 = parseFloat(document.getElementById(input1Id).value);
-      var num2 = parseFloat(document.getElementById(input2Id).value);
-
-      if (isNaN(num1) || isNaN(num2)) {
-        alert("Будь-ласка, ведiте коректнi числа");
-        return;
-      }
-
-      var multiplicationResult = num1 * num2 / 100;
-      var additionResult = multiplicationResult + (multiplicationResult * 0.10);
-      var roundedResult = Math.abs(additionResult % 1) >= 0.5 ?
-        Math.ceil(additionResult) :
-        Math.floor(additionResult);
-
-      document.getElementById(resultId).innerText = "Результат: " + roundedResult;
-    }
-
-    function multiplyAndAdd15(resultId, input1Id, input2Id) {
-      var num1 = parseFloat(document.getElementById(input1Id).value);
-      var num2 = parseFloat(document.getElementById(input2Id).value);
-
-      if (isNaN(num1) || isNaN(num2)) {
-        alert("Будь-ласка, ведiте коректнi числа");
-        return;
-      }
-
-      var multiplicationResult = num1 * num2 / 100;
-      var additionResult = multiplicationResult + (multiplicationResult * 0.15);
-      var roundedResult = Math.abs(additionResult % 1) >= 0.5 ?
-        Math.ceil(additionResult) :
-        Math.floor(additionResult);
-
-      document.getElementById(resultId).innerText = "Результат: " + roundedResult;
-    }
-  </script>
-
-</body>
-
-</html> -->
-
-
-
-
-
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Умножение и вычитание 15%</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 50px;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>-15%</h1>
-
-  <label for="num1">Введите первое число:</label>
-  <input type="number" id="num1" placeholder="Введите число">
-
-  <label for="num2">Введите второе число:</label>
-  <input type="number" id="num2" placeholder="Введите число">
-
-  <button onclick="multiplyAndSubtract()">Умножить и вычесть 15%</button>
-
-  <h2>Результат:</h2>
-  <p id="result"></p>
-
-  <script>
-    function multiplyAndSubtract() {
-
-      var num1 = parseFloat(document.getElementById('num1').value);
-      var num2 = parseFloat(document.getElementById('num2').value);
-
-
-      if (isNaN(num1) || isNaN(num2)) {
-        alert("Пожалуйста, введите корректные числа");
-        return;
-      }
-
-
-      var multiplicationResult = num1 * num2;
-
-
-      var subtractionResult = multiplicationResult - (multiplicationResult * 0.15);
-
-
-      var roundedResult = Math.abs(subtractionResult % 1) >= 0.5
-        ? Math.ceil(subtractionResult)
-        : Math.floor(subtractionResult);
-
-
-      document.getElementById('result').innerText = "Результат: " + roundedResult;
-    }
-
-  </script>
-
-</body>
-</html> -->
